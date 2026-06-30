@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { Playfair_Display } from 'next/font/google'
 import {
-  Scissors,
   CalendarClock,
   Share2,
   Settings,
@@ -31,9 +30,7 @@ export default function Home() {
       <header className="absolute inset-x-0 top-0 z-20">
         <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5">
           <Link href="/" className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-amber-400 text-neutral-950">
-              <Scissors className="size-4.5" />
-            </span>
+            <img src="/logo.png" alt="Barbearia Agenda" className="h-9 w-auto" />
             <span className="text-[15px] font-semibold tracking-tight text-white">
               Barbearia<span className="text-amber-400">Agenda</span>
             </span>
@@ -220,7 +217,7 @@ export default function Home() {
 
       {/* ===== Testimonial ===== */}
       <section className="mx-auto w-full max-w-4xl px-5 py-24 text-center">
-        <Scissors className="mx-auto size-7 text-amber-400" />
+        <img src="/logo.png" alt="" className="mx-auto h-14 w-auto" />
         <blockquote
           className={`${playfair.className} mt-6 text-3xl font-medium leading-snug text-white sm:text-4xl`}
         >
@@ -266,7 +263,7 @@ export default function Home() {
       <footer className="border-t border-white/5">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-3 px-5 py-8 text-sm text-neutral-500 sm:flex-row">
           <div className="flex items-center gap-2">
-            <Scissors className="size-4 text-amber-400" />
+            <img src="/logo.png" alt="" className="h-6 w-auto" />
             <span className="font-medium text-neutral-300">BarbeariaAgenda</span>
           </div>
           <p>Feito com Next.js e Supabase</p>
