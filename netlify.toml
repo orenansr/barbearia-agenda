@@ -1,5 +1,8 @@
 [build]
-  command = "npm run build"
+  # Next 16 usa Turbopack por padrão; o bundler de Edge Functions do Netlify
+  # não resolve o chunk de runtime do Turbopack no middleware. webpack gera um
+  # middleware self-contained que o Netlify empacota sem erro.
+  command = "next build --webpack"
 
 [build.environment]
   NODE_VERSION = "20"
